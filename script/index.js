@@ -22,7 +22,7 @@ function renderFilms(data) {
         let langs = ''
         film.languages.forEach(lang => {
         langs += `<div class="w-6 h-6">
-                        <img alt="${lang}-flag" loading="lazy" width="280" height="410" class="w-full h-full" src="img/${lang}-flag.svg" style="color: transparent;" />
+                        <img alt="${lang.toLowerCase()}-flag" loading="lazy" width="280" height="410" class="w-full h-full" src="img/${lang.toLowerCase()}-flag.svg" style="color: transparent;" />
                     </div>`
         });
         kod += `

@@ -134,7 +134,7 @@ function renderSeans(selectedFilm) {
                     <div class="flex flex-col leading-none gap-1">${selectedFilm.type.split("_")[1]}</div>
                 </td>
                 <td class="py-4 px-2 max-sm:p-1 text-center">
-                    <img alt="flag" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" src="img/${selectedFilm.language}-flag.svg" style="color: transparent;">
+                    <img alt="flag" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" src="img/${selectedFilm.language.toLowerCase()}-flag.svg" style="color: transparent;">
                 </td>
                 <td class="py-4 px-2 text-sm text-[#FFFFFF] max-sm:p-1">
                     <div class="flex items-center justify-center">
