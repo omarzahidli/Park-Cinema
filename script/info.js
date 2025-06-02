@@ -61,7 +61,7 @@ function renderFilmInfo(selectedFilm) {
         movieLangs.forEach(lang => {
             let kod = ''
             kod += `<li>
-                        <img alt="${lang}-flag" src="img/${lang}-flag.svg" />
+                        <img alt="${lang}-flag" src="img/${lang.toLowerCase()}-flag.svg" />
                     </li>`
             langs.innerHTML = kod
         });
@@ -70,7 +70,7 @@ function renderFilmInfo(selectedFilm) {
             movieSubtitles.forEach(sub => {
                 let kod = ''
                 kod += `<li>
-                            <img alt="${sub}-flag" src="img/${sub}-flag.svg" />
+                            <img alt="${sub}-flag" src="img/${sub.toLowerCase()}-flag.svg" />
                         </li>`
                 subtitles.innerHTML = kod
             });
